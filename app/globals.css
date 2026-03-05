@@ -11,7 +11,7 @@
 body {
   background-color: var(--color-bg-main);
   color: #111;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-rajdhani), Arial, Helvetica, sans-serif;
   overflow: hidden;
 }
 
@@ -29,9 +29,58 @@ body {
   border: 2px solid var(--color-border);
 }
 
-.tech-border-corners::before { top: -2px; left: -2px; border-right: none; border-bottom: none; }
-.tech-border-corners::after { top: -2px; right: -2px; border-left: none; border-bottom: none; }
+.tech-border-corners::before {
+  top: -2px;
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
 
-.tech-border-bottom-corners::before { bottom: -2px; left: -2px; border-right: none; border-top: none; }
-.tech-border-bottom-corners::after { bottom: -2px; right: -2px; border-left: none; border-top: none; }
+.tech-border-corners::after {
+  top: -2px;
+  right: -2px;
+  border-left: none;
+  border-bottom: none;
+}
 
+.tech-border-bottom-corners::before {
+  bottom: -2px;
+  left: -2px;
+  border-right: none;
+  border-top: none;
+}
+
+.tech-border-bottom-corners::after {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}
+
+.tech-button {
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tech-button:hover {
+  background-color: var(--color-accent-dark);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.font-mono-numbers {
+  font-family: var(--font-share-tech-mono), monospace;
+}
